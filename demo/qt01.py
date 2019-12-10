@@ -20,4 +20,8 @@ class FirstMainWin(QMainWindow):
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)
-    app.setWindowIcon(QIcon())
+    app.setWindowIcon(QIcon('/image/add.png'))
+    main=FirstMainWin()
+
+    main.show()
+    sys.exit(app.exec_())
